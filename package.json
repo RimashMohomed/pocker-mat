@@ -2,7 +2,7 @@
   "name": "landrick",
   "version": "2.0.0",
   "private": true,
-  "homepage": "http://RimashMohomed.github.io",
+  "homepage": "http://rimashmohomed.github.io/pocket-mat/",
   "dependencies": {
     "aos": "^2.3.4",
     "availity-reactstrap-validation": "^2.6.1",
