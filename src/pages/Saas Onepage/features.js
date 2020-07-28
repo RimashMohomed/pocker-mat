@@ -30,7 +30,7 @@ class Features extends Component {
             <React.Fragment>
             <Container>
                 {/* section title */}
-                <SectionTitle title="Great Features" desc="that can provide everything you need to generate awareness, drive traffic, connect." />
+                <SectionTitle title="Fits in your pocket" desc="that can provide everything you need to generate awareness, drive traffic, connect." />
 
                 {/* feature box */}
                 <Feature featureArray={this.state.features}/> 

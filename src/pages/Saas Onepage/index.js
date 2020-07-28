@@ -141,6 +141,10 @@ class SaasOnepage extends Component {
         
                 {/* team members */}
                 <Team/>
+
+                <section className="section bg-light" id="gallery">
+                   
+                </section>
         
                 <section className="section pb-0" id="contact">
                     {/* contact us */}

@@ -8,7 +8,7 @@ import ThemeSwitcher from "./theme-switcher";
 
 // Layout Components
 const Topbar = React.lazy(() => import('./Topbar'));
-const NavbarPage = React.lazy(() => import('../../pages/Saas Onepage/NavbarPage'));
+const NavbarPage = React.lazy(() => import('../../pages/Saas Onepage/nav-bar'));
 const Footer = React.lazy(() => import('./Footer'));
 const FooterWithoutMenuLightSocialOnly = React.lazy(() => import('./FooterWithoutMenuLightSocialOnly'));
 
@@ -31,12 +31,7 @@ class Layout extends Component {
     return (
       <React.Fragment>
          <Suspense fallback = {this.Loader()} >
-        {
-          this.props.location.pathname === "/index-onepage" ?
           <NavbarPage/>
-          :
-          <Topbar />
-        }
         
         {this.props.children}
         {(() => {
@@ -60,7 +55,6 @@ class Layout extends Component {
             )
           }
         })()}
-        <ThemeSwitcher/>
         <div id="bottomIcon">
           {/* scrollup button */}
           <ScrollUpButton className="bottomIcon"/>
